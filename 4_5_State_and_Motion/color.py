@@ -16,7 +16,9 @@ class Color(object):
         self.r = r
         
         ## TODO: Set the other two color variables g and b
+        self.g = g
         
+        self.b = b
 
     # __repr__ is called when a color is printed using print(some_color)
     # It must return a string
@@ -28,7 +30,7 @@ class Color(object):
         ## TODO: Write a string representation for the color
         ## ex. "rgb = [self.r, self.g, self.b]"
         ## Right now this returns an empty string
-        string = ''
+        string = 'rgb = [{}, {}, {}]'.format(self.r, self.g, self.b)
         
         return string
     
